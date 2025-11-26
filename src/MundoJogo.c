@@ -13,13 +13,11 @@ MundoJogo *criarMundoJogo( int fps, float gravidade ) {
     *novoMJ = (MundoJogo) {0};
 
     novoMJ->lj = (LoopJogo) {
-        .fps = fps,
-        .atrasoQuadro = 1000 / fps,
-        .deltaBase = 1.0f / fps,
+        .delta = 0,
         .tempoAntes = 0,
         .tempoDepois = 0,
         .tempoQuadro = 0,
-        .delta = 0,
+        .atrasoQuadro = 1000 / fps
     };
 
     novoMJ->quantidadeMaximaBolinhas = 100;

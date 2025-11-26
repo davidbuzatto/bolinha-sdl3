@@ -3,15 +3,13 @@
 #include <SDL3/SDL.h>
 
 typedef struct LoopJogo {
-
-    Uint64 fps;
-    Uint64 atrasoQuadro;
-    float deltaBase;
+    
     float delta;
 
     Uint64 tempoAntes;
     Uint64 tempoDepois;
     Uint64 tempoQuadro;
+    Uint64 atrasoQuadro;
 
 } LoopJogo;
 
